@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  overflow-x: hidden;
+  background: rgb(237,237,247);
+  background: linear-gradient(0deg, rgba(237,237,247,1) 0%, rgba(244,244,247,1) 71%, rgba(231,229,229,1) 100%);
+ 
+}
+
+
+.handclick{
+  display: none;
+}
+
+.innerslide{
+  animation: clothani 20s linear infinite;
+}
+.slick-prev, .slick-next{
+  color: red;
+  background: red;
+}
+
+@keyframes clothani {
+  from{
+   transform : translateX(0)
+  }
+  to{
+    transform: translateX(-100%);
+
+  }
+}
+
+@media (width<1025px) {
+  .midimg{
+    order: -1;
+  }
+  
+}
+
+@media (width<1200px) {
+  .close{
+    display: none;
+
+  }
+  .handclick{
+    display: inline-block;
+  }
+
+  .show{
+    position:absolute;
+    z-index: 1;
+    top:2.5rem;
+    left:0;
+    background-color: black;
+    width: 100%;
+   }
+
+   .show ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   }
+  
+}
