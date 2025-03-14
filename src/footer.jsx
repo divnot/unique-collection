@@ -49,7 +49,7 @@ function Footer(){
       <hr/>
       <div className="grid lg:grid-cols-2   justify-items-center items-center  grid-cols-1">
 
-      <div className="m-5" >
+      <div className="m-3" >
             <p>© 2025 Good Tribe Private Limited. All rights Reserved.</p>
         </div>
       

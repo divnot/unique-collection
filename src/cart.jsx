@@ -7,7 +7,7 @@ function Cart(){
     return(
         <>
          <div className="flex justify-center m-28">
-         <p className=" font-bold text-4xl  ">Add To Cart</p>
+         <p className=" font-bold md:text-4xl text-2xl  ">Add To Cart</p>
          <hr/>
          </div>
 
