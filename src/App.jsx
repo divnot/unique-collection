@@ -7,6 +7,8 @@ import About from './about'
 import Contact from './contact'
 import Gallary from './Gallary'
 import Homedetail from './homedetail'
+import Cart from './cart'
+import Profile from './profile'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 
@@ -35,6 +37,14 @@ const router = createBrowserRouter(
         {
           path:"/contact",
           element:<Contact/>,
+        },
+        {
+          path:"/cart",
+          element:<Cart/>,
+        },
+        {
+          path:"/profile",
+          element:<Profile/>,
         }
         
       ]
