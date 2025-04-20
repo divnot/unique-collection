@@ -15,14 +15,14 @@ function Contact(){
        */}
         <div className=" flex justify-items-center  items-center      m-16">
            
-            <form>
+            <form  action="https://formspree.io/f/mnnpepvb" method="POST">
                 
                 <label htmlFor="name" className="text-center" >Name</label><br/><br/>
-                < input className="hover:bg-green-300 bg-green-200" id="name" type="text" placeholder="Name" /><br/><br/>
+                < input className="hover:bg-green-300 bg-green-200" name="username" id="name" type="text" placeholder="Name" /><br/><br/>
                 <label  className="text-center" htmlFor="email" >Email</label><br/><br/>
-                < input className="hover:bg-green-300 bg-green-200" type="email" placeholder="Email"/><br/><br/>
+                < input className="hover:bg-green-300 bg-green-200" name="email" type="email" placeholder="Email"/><br/><br/>
                 <label  className="text-center" htmlFor="message" >Message</label><br/><br/>
-                <textarea  id="message" className="hover:bg-green-300 bg-green-200" row="30" cols="20" placeholder="Message" /><br/><br/>
+                <textarea  id="message" className="hover:bg-green-300 bg-green-200" name="description" row="30" cols="20" placeholder="Message" /><br/><br/>
                 <button className="bg-green-800 w-20 rounded" type="submit">Submit</button>
             </form>
 

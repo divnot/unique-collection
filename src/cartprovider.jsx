@@ -14,6 +14,7 @@ export const store = createContext();
 // };
 const initialstate ={
     cart:[]
+
 }
 
 const reducer = (state, action)=>{
@@ -48,6 +49,14 @@ category,
              cart:del,
           };
     }
+
+
+   
+
+
+
+
+
     return state;
 
 }
@@ -78,10 +87,13 @@ category,
 
         console.log(state.cart)
 
+   
+
+  
  
    
     return(
-        <store.Provider value={{...state, handlecart , handledel}} >
+        <store.Provider value={{...state, handlecart , handledel }} >
         {children}
         </store.Provider>
     )

@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { store } from "./cartprovider";
 
 function Cart(){
    const {cart , handledel}  = useContext(store);
+
+   
   //  .log(cart[0].id);
     return(
         <>
@@ -35,7 +37,14 @@ category}</p>
     })
 
   }
-</div>     
+
+
+
+</div>
+
+<div className="flex justify-center m-4">
+ <button className="bg-green-600 text-white font-bold w-16 h-6">Pay</button>
+</div>
         </>
       
     )

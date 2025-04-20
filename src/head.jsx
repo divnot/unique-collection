@@ -34,8 +34,8 @@ function Head(){
             </div>
             <div  className={togle?"show":"close"}>
             <ul className="flex gap-3">
-<NavLink to="/" ><li className="text-green-800 font-bold">Home</li></NavLink>                           
-<NavLink to="/about" ><li className="text-green-800 font-bold" >About</li></NavLink>                           
+<NavLink to="/" ><li className="text-green-800 font-bold">Women</li></NavLink>                           
+<NavLink to="/about" ><li className="text-green-800 font-bold" >Men</li></NavLink>                           
 <NavLink to="/gallary" ><li className="text-green-800 font-bold">Gallary</li></NavLink>                            
 <NavLink to="/contact" ><li className="text-green-800 font-bold">Contact</li></NavLink>  
 <NavLink to="/cart" ><li className="text-green-800 font-bold">Cart</li></NavLink>                            
@@ -44,7 +44,7 @@ function Head(){
             </div>
             <div>
                 <NavLink to={"/profile"}>
-                <button className="bg-red-600 w-20 rounded-sm text-blue-50">Profile</button>
+                <button className="bg-red-600 w-20 rounded-sm text-blue-50">Owner</button>
                 </NavLink>
                 
             </div>
@@ -58,16 +58,7 @@ function Head(){
      </div> */}
 
         </nav>
-
-      
-
-
-
-
-     
-
-        
-        
+  
         </>
     )
 }
